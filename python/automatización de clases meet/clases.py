@@ -55,7 +55,7 @@ def open_class():
                             while started!= False:
                                 current_time = take_current_time()
                                 if current_time == new_time.str:
-                                    pyto.moveTo('787','730')
+                                    pyto.moveTo('983','511')
                                     pyto.click()
                                     time.sleep(120)
                                     break
