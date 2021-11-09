@@ -43,7 +43,7 @@ def open_class():
                             pyto.hotkey('ctrlleft','d')
                             pyto.hotkey('ctrlleft','e')
                             time.sleep(2)
-                            pyto.moveTo(989,481)
+                            pyto.moveTo(983,511)
                             pyto.click()
                             time.sleep(30)
                             pyto.hotkey('ctrlleft','altleft','c')
@@ -55,7 +55,7 @@ def open_class():
                             while started!= False:
                                 current_time = take_current_time()
                                 if current_time == new_time.str:
-                                    pyto.moveTo('983','511')
+                                    pyto.moveTo('787','730')
                                     pyto.click()
                                     time.sleep(120)
                                     break
