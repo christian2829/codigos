@@ -5,10 +5,75 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MI PORTAFOLIO</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="style.css">
 	
 </head>
 <body>
-	<h1>Hola </h1>
+	<nav>
+		<button class="nav-button" onclick="accion()">Menú</button>
+		<a href="#" class="nav-enlace desaparece">inicio</a>
+		<a href="#" class="nav-enlace desaparece">nosotros</a>
+		<a href="#" class="nav-enlace desaparece">servicios</a>
+		<a href="#" class="nav-enlace desaparece">contacto</a>
+
+	</nav>
+	<h1 class="text-center">HVDS</h1>
+	<section class="container flex text-center">
+		<div class="columna">
+			<h2 >Precio uno</h2>
+			<p class="precio">$500</p>
+			<p>Lorem ipsum dolor! aaaaaaaaaascdccxdvcdscvfd</p>
+			<hr>
+			<p>Lorem ipsum dolor sit amet</p>
+			<p>Lorem ipsum dolor sit amet</p>
+			<p>lorem ipsum</p>
+			<hr>	
+			<a href="#" class="btn-precio">comprar</a>
+		</div>	
+		<div class="columna">
+			<h2 >Precio dos</h2>
+			<p class="precio">$500</p>
+			<p>Lorem ipsum dolor! aaaaaaaaaascdccxdvcdscvfd</p>
+			<hr>
+			<p>Lorem ipsum dolor sit amet</p>
+			<p>Lorem ipsum dolor sit amet</p>
+			<p>lorem ipsum</p>
+			<hr>	
+			<a href="#" class="btn-precio">comprar</a>
+		</div>	
+		<div class="columna">
+			<h2 >Precio tres</h2>
+			<p class="precio">$500</p>
+			<p>Lorem ipsum dolor! aaaaaaaaaascdccxdvcdscvfd</p>
+			<hr>
+			<p>Lorem ipsum dolor sit amet</p>
+			<p>Lorem ipsum dolor sit amet</p>
+			<p>lorem ipsum</p>
+			<hr>	
+			<a href="#" class="btn-precio">comprar</a>
+		</div>	
+		<div class="columna">
+			<h2 >Precio cuatro</h2>
+			<p class="precio">$500</p>
+			<p>Lorem ipsum dolor! aaaaaaaaaascdccxdvcdscvfd</p>
+			<hr>
+			<p>Lorem ipsum dolor sit amet</p>
+			<p>Lorem ipsum dolor sit amet</p>
+			<p>lorem ipsum</p>
+			<hr>	
+			<a href="#" class="btn-precio">comprar</a>
+		</div>	
+	</section>
+
+	<script>
+	function accion(){
+		console.log('está funcionando este button');
+		var ancla = document.getElementsByClassName('nav-enlace');
+		for(var i = 0; i < ancla.length; i++){
+			ancla[i].classList.toggle('desaparece')
+		}
+	}
+	</script>
 </body>
 </html>

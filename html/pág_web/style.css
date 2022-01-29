@@ -1,3 +1,93 @@
-h1{
-    color: blue;
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+.nav-enlace{
+    display: inline-block;
+    background: salmon;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+.nav-enlace:hover{
+    background: rosybrown;
+}
+nav{
+    background: slateblue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-button{
+    background: salmon;
+    color: #fff;
+    padding: 10px 0px;
+    border: 2px  solid #fff;
+    display: none;
+}
+@media (max-width: 600px){
+    nav{
+        background: slateblue;
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin: 10px ;
+    }
+    .nav-button{
+        display: inline-block;
+    }
+    .desaparece{
+        display: none;
+    }
+}
+/*seccion*/
+.container{
+    margin: 0 auto;
+    width: 90%;
+
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-center{
+    text-align: center;
+}
+.columna{
+    background: rgb(228, 228, 228);
+    color: #333;
+    border: 1px solid #333;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #888;
+    width: 23%;
+    box-sizing: border-box;
+}
+.precio{
+    font-size: 50px;
+    color: #00dac7;
+}
+.btn-precio{
+    background: salmon;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.btn-precio:hover{
+    background: rgb(247, 100, 84);
+}
+@media (max-width: 1070px){
+    .columna{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 600px){
+    .columna{
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
