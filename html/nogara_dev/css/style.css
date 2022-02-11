@@ -7,10 +7,6 @@
 body {
   background: #575757;
 }
-
-#inicio{
-    
-}
 .nav{
     width: 100%;
     display: flex;
@@ -29,7 +25,6 @@ body {
 .menu{
     display: flex;
 }
-
 .menu li{
     list-style: none;
     margin: 10px;
@@ -48,9 +43,6 @@ body {
 .activa{
     background-color: #04AA6D;
     border-radius: 5px;
-}
-.text-center{
-    text-align: center;
 }
 
 
